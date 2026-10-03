@@ -1,5 +1,5 @@
 "use strict";
-(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[40273],{
+(globalThis["webpackChunkknife_preview"] = globalThis["webpackChunkknife_preview"] || []).push([[85752],{
 
 /***/ 28453:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
@@ -96,7 +96,7 @@ function MDXProvider(properties) {
 
 /***/ }),
 
-/***/ 58543:
+/***/ 99986:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -108,25 +108,25 @@ __webpack_require__.d(__webpack_exports__, {
   contentTitle: () => (/* binding */ contentTitle),
   "default": () => (/* binding */ MDXContent),
   frontMatter: () => (/* binding */ frontMatter),
-  metadata: () => (/* reexport */ site_docs_sk_knifes_knifes_overview_knife_overview_blog_md_916_namespaceObject),
+  metadata: () => (/* reexport */ site_docs_en_knifes_knifes_overview_knife_overview_blog_md_132_namespaceObject),
   toc: () => (/* binding */ toc)
 });
 
-;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-sk-knifes-knifes-overview-knife-overview-blog-md-916.json
-const site_docs_sk_knifes_knifes_overview_knife_overview_blog_md_916_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","source":"@site/docs/sk/knifes/knifes_overview/KNIFE_Overview_Blog.md","sourceDirName":"sk/knifes/knifes_overview","slug":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG","permalink":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_BLOG","guid":"f475781d-0095-4a6c-871a-5b103cd1b750","dao":"{{DAO}}","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"sk","created":"2026-10-03","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"SK_KNIFES_HOME – KNIFES (SK)","permalink":"/sk/knifes/"},"next":{"title":"📊 KNIFE Overview – Details","permalink":"/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS"}}');
+;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-en-knifes-knifes-overview-knife-overview-blog-md-132.json
+const site_docs_en_knifes_knifes_overview_knife_overview_blog_md_132_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","source":"@site/docs/en/knifes/knifes_overview/KNIFE_Overview_Blog.md","sourceDirName":"en/knifes/knifes_overview","slug":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN","draft":false,"unlisted":false,"tags":[],"version":"current","frontMatter":{"fm_version":"1.0.1","fm_build":"{{FM_BUILD}}","fm_version_comment":"","id":"KNIFE_OVERVIEW_BLOG_EN","guid":"7b0930fe-87fb-466b-b327-4a6e65bbd793","dao":"{{DAO}}","title":"📰 KNIFE Overview – Blog","description":"{{DESCRIPTION}}","author":"Roman Kazička","authors":["Roman Kazička"],"category":"","type":"","priority":"","tags":[],"locale":"en","created":"2026-10-03","modified":"","status":"backlog","privacy":"public","rights_holder_content":"Roman Kazička","rights_holder_system":"CAA / KNIFE / LetItGrow","license":"CC-BY-NC-SA-4.0","disclaimer":"Use at your own risk. Methods provided as-is; participation is voluntary and context-aware.","copyright":"© 2025 Roman Kazička","origin_repo":"","origin_repo_url":"","origin_commit":"","origin_branch":"","origin_system":"CAA","origin_author":"Roman Kazička","origin_imported_from":"","origin_import_date":"","fm_reserved1":"","fm_reserved2":""},"sidebar":"tutorialSidebar","previous":{"title":"KNIFE – Overview (EN)","permalink":"/en/knifes/"},"next":{"title":"📊 KNIFE Overview – Details","permalink":"/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(74848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
 var lib = __webpack_require__(28453);
-;// ./docs/sk/knifes/knifes_overview/KNIFE_Overview_Blog.md
+;// ./docs/en/knifes/knifes_overview/KNIFE_Overview_Blog.md
 
 
 const frontMatter = {
 	fm_version: '1.0.1',
 	fm_build: '{{FM_BUILD}}',
 	fm_version_comment: '',
-	id: 'KNIFE_OVERVIEW_BLOG',
-	guid: 'f475781d-0095-4a6c-871a-5b103cd1b750',
+	id: 'KNIFE_OVERVIEW_BLOG_EN',
+	guid: '7b0930fe-87fb-466b-b327-4a6e65bbd793',
 	dao: '{{DAO}}',
 	title: '📰 KNIFE Overview – Blog',
 	description: '{{DESCRIPTION}}',
@@ -138,7 +138,7 @@ const frontMatter = {
 	type: '',
 	priority: '',
 	tags: [],
-	locale: 'sk',
+	locale: 'en',
 	created: '2026-10-03',
 	modified: '',
 	status: 'backlog',
@@ -191,7 +191,7 @@ function _createMdxContent(props) {
         children: [(0,jsx_runtime.jsx)(_components.strong, {
           children: "GUID:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
-          children: "f475781d-0095-4a6c-871a-5b103cd1b750"
+          children: "7b0930fe-87fb-466b-b327-4a6e65bbd793"
         }), "\n", (0,jsx_runtime.jsx)(_components.strong, {
           children: "Status:"
         }), " ", (0,jsx_runtime.jsx)(_components.code, {
@@ -205,17 +205,17 @@ function _createMdxContent(props) {
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.strong, {
         children: (0,jsx_runtime.jsx)(_components.a, {
-          href: "/sk/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG",
+          href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_BLOG_EN",
           children: "📰 Blog"
         })
       }), " | ", (0,jsx_runtime.jsx)(_components.a, {
-        href: "/sk/knifes/knifes_overview/KNIFE_OVERVIEW_LIST",
+        href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_LIST_EN",
         children: "🗂 List"
       }), " | ", (0,jsx_runtime.jsx)(_components.a, {
-        href: "/sk/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS",
+        href: "/en/knifes/knifes_overview/KNIFE_OVERVIEW_DETAILS_EN",
         children: "📊 Details"
       }), " | ", (0,jsx_runtime.jsx)(_components.a, {
-        href: "/sk/knifes/",
+        href: "/en/knifes/",
         children: "↩️ KNIFES"
       })]
     })]

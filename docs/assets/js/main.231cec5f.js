@@ -352,8 +352,8 @@ module.exports = hoistNonReactStatics;
           "position": "right"
         },
         {
-          "href": "https://github.com/06-STH-Projects/2026_sthdf_class_template/commit/eb0085c",
-          "label": "Release eb0085c • eb0085c",
+          "href": "https://github.com/06-STH-Projects/2026_sthdf_class_template/commit/6e22e0c",
+          "label": "Release 6e22e0c • 6e22e0c",
           "position": "right"
         }
       ],
@@ -361,7 +361,7 @@ module.exports = hoistNonReactStatics;
     },
     "footer": {
       "style": "dark",
-      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>eb0085c</strong><br/>\n    💡 Commit: <code>eb0085c</code><br/>\n    🕒 Build: 2026-10-03 16:29:05 UTC\n  </div>\n",
+      "copyright": "\n  <div style=\"text-align:center;\">\n    © 2026 SystemThinking<br/>\n    🔖 Release: <strong>6e22e0c</strong><br/>\n    💡 Commit: <code>6e22e0c</code><br/>\n    🕒 Build: 2026-10-03 16:38:28 UTC\n  </div>\n",
       "links": []
     },
     "prism": {
