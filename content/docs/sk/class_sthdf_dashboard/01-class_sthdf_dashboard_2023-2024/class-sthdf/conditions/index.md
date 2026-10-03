@@ -23,10 +23,8 @@ guid: "b8776c32-766d-45ae-9461-a466517aa75d"
 dao: "class_sthdf_dashboard"
 
 # Názov zápisu – dopĺňa používateľ
-title: "conditions"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "{{DESCRIPTION}}"
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -56,7 +54,6 @@ priority: ""
 #   - účel: tutorial, guide, pattern, case-study
 #   - téma: git, backup, ai, communication
 #   - úroveň: beginner, intermediate, advanced
-tags: []
 
 
 # 🌍 LOCALIZATION -----------------------------------------------------
@@ -129,12 +126,6 @@ origin_import_date: ""
 
 fm_reserved1: ""
 fm_reserved2: ""
----
-
-<!-- class_sthdf_dashboard_INSTANCE_ID: 01-class_sthdf_dashboard_2023-2024 -->
-
----
-id: conditions
 title: 🧭 Assignments & Milestones
 description: Rules, grading, deadlines, and submission flow for STHDF 2023–2024.
 sidebar_label: Assignments & Milestones
@@ -149,6 +140,7 @@ knife:
   related_prj: []
   kc_refs: []
 ---
+<!-- class_sthdf_dashboard_INSTANCE_ID: 01-class_sthdf_dashboard_2023-2024 -->
 
 [🏠 Domov](../../index.md) · [⬅️ Nahor](../index.md)
 

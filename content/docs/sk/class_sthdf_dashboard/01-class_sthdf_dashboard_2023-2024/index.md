@@ -13,6 +13,7 @@ fm_version_comment: ""
 
 # ID generuje CLI / skript
 id: "01-class_sthdf_dashboard_2023-2024"
+slug: /
 
 # Unikátne UUID – generuje skript
 guid: "19198d05-055b-4caf-ba8a-913d45eb5557"
@@ -27,7 +28,6 @@ dao: "class_sthdf_dashboard"
 title: "01-class_sthdf_dashboard_2023-2024 – Class STHDF 2023-2024"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "{{DESCRIPTION}}"
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -130,15 +130,9 @@ origin_import_date: ""
 
 fm_reserved1: ""
 fm_reserved2: ""
----
-
----
-id: home-sk
-title: 🏠 Domov (SK)
 description: Vstupná stránka pre slovenskú verziu kurzu STHDF 2023–2024
 sidebar_position: 0
 ---
-
 # Vitaj v STHDF 2023–2024 🎓
 
 Toto je hlavná stránka pre slovenskú časť kurzu **Systémové myslenie v IT a digitálnej fabrikácii**.  

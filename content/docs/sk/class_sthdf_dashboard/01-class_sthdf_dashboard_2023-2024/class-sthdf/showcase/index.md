@@ -23,10 +23,8 @@ guid: "988a086c-9e69-43dd-9456-cb91c7b64ade"
 dao: "class_sthdf_dashboard"
 
 # Názov zápisu – dopĺňa používateľ
-title: "showcase"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "{{DESCRIPTION}}"
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -56,7 +54,6 @@ priority: ""
 #   - účel: tutorial, guide, pattern, case-study
 #   - téma: git, backup, ai, communication
 #   - úroveň: beginner, intermediate, advanced
-tags: []
 
 
 # 🌍 LOCALIZATION -----------------------------------------------------
@@ -129,12 +126,6 @@ origin_import_date: ""
 
 fm_reserved1: ""
 fm_reserved2: ""
----
-
-<!-- class_sthdf_dashboard_INSTANCE_ID: 01-class_sthdf_dashboard_2023-2024 -->
-
----
-id: showcase
 title: ✨ Showcase — Best of 2023
 description: Curated highlights from student work and projects.
 sidebar_label: Showcase
@@ -149,6 +140,7 @@ knife:
   related_prj: []
   kc_refs: []
 ---
+<!-- class_sthdf_dashboard_INSTANCE_ID: 01-class_sthdf_dashboard_2023-2024 -->
 
 [🏠 Domov](../../index.md) · [⬅️ Nahor](../index.md)
 

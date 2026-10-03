@@ -23,7 +23,6 @@ guid: "f0f48695-c5a8-4e17-8e1f-73d3846fa07c"
 dao: "class_sthdf_dashboard"
 
 # Názov zápisu – dopĺňa používateľ
-title: "class sthdf"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
 description: "{{DESCRIPTION}}"
@@ -129,15 +128,10 @@ origin_import_date: ""
 
 fm_reserved1: ""
 fm_reserved2: ""
----
-
-<!-- class_sthdf_dashboard_INSTANCE_ID: 01-class_sthdf_dashboard_2023-2024 -->
-
----
-id: class-sthdf
 title: 🧭 Class STHDF – Overview
 sidebar_position: 0
 ---
+<!-- class_sthdf_dashboard_INSTANCE_ID: 01-class_sthdf_dashboard_2023-2024 -->
 
 [🏠 Domov](../index.md)
 

@@ -23,10 +23,8 @@ guid: "693b167f-c382-437a-85de-33e0fa47961d"
 dao: "class_sthdf_dashboard"
 
 # Názov zápisu – dopĺňa používateľ
-title: "about"
 
 # Krátky popis – dopĺňa používateľ (voliteľné)
-description: "{{DESCRIPTION}}"
 
 
 # 👥 AUTHORSHIP ------------------------------------------------------
@@ -56,7 +54,6 @@ priority: ""
 #   - účel: tutorial, guide, pattern, case-study
 #   - téma: git, backup, ai, communication
 #   - úroveň: beginner, intermediate, advanced
-tags: []
 
 
 # 🌍 LOCALIZATION -----------------------------------------------------
@@ -129,12 +126,6 @@ origin_import_date: ""
 
 fm_reserved1: ""
 fm_reserved2: ""
----
-
-<!-- class_sthdf_dashboard_INSTANCE_ID: 01-class_sthdf_dashboard_2023-2024 -->
-
----
-id: about
 title: 📘 About the Course
 description: Overview of the STHDF 2023–2024 course – goals, format, tooling, and outcomes.
 sidebar_label: About the Course
@@ -149,6 +140,7 @@ knife:
   related_prj: []
   kc_refs: []
 ---
+<!-- class_sthdf_dashboard_INSTANCE_ID: 01-class_sthdf_dashboard_2023-2024 -->
 
 [🏠 Domov](../../index.md) · [⬅️ Nahor](../index.md)
 

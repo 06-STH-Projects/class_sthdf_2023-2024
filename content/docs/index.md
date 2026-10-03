@@ -5,7 +5,8 @@ fm_version_comment: "Stabilné ID/slug pre navigáciu (hub + SK + EN)"
 id: "KNIFE_HOME"
 guid: "cd72cd3b-7383-40ec-843c-6ba53025b4d1"
 dao: "knife"
-title: "STHDF 2023-2024 – Domov"
+title: "O ročníku 2023-2024"
+slug: /o-rocniku
 description: "Vstupná stránka triedy STHDF 2023-2024."
 author: "Roman Kazička"
 authors: ["Roman Kazička"]
@@ -31,7 +32,6 @@ author_id: ""
 author_did: ""
 fm_reserved1: ""
 fm_reserved2: ""
-slug: "/"
 sidebar_position: "1"
 ---
 
