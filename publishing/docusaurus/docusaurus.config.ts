@@ -14,16 +14,15 @@ const commitLink =
   GITHUB_REPO_URL && COMMIT_SHA ? `${GITHUB_REPO_URL}/commit/${COMMIT_SHA}` : '';
 
 const config: Config = {
-  title: 'KNIFE - STHDF 2026-2027 - Student Template',
+  title: 'KNIFE - Class STHDF 2023-2024 - Dashboard',
   url: SITE_URL,
   baseUrl: BASE_URL,
   deploymentBranch: 'gh-pages',
   favicon: 'img/favicon.ico',
 
-  i18n: {
-    defaultLocale: 'sk',
-    locales: ['sk', 'en'],
-  },
+  // i18n vypnuté – SK/EN riešené cez adresárovú štruktúru docs/sk/ + docs/en/
+  // Bez tohto bloku Docusaurus nerobí locale prefix logiku (/en/sk/... problém)
+  // Rovnako ako v kanonickom knifes_overview-03 (SSOT).
 
   presets: [
     [
@@ -59,7 +58,7 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'KNIFE - STHDF 2026-2027 - Student Template',
+      title: 'KNIFE - Class STHDF 2023-2024 - Dashboard',
       logo: {
         alt: 'KNIFE',
         src: 'img/logo.png',
@@ -68,7 +67,10 @@ const config: Config = {
         href: '/', // ← sem vložíš svoj cieľový link
       },
       items: [
-        { type: 'localeDropdown', position: 'left' },
+        { href: '/sk/knifes/', label: '🔪 KNIFE', position: 'left' },
+        { href: '/en/knifes/', label: '🔪 KNIFE (EN)', position: 'left' },
+        { href: '/sk/7Ds/', label: '🧭 7Ds', position: 'left' },
+        { href: '/sk/sthdf/', label: '🏫 STHDF', position: 'left' },
         { to: '/sk/about', label: 'About', position: 'right' },
         { to: '/sk/help',  label: 'Help',  position: 'right' },
         {

@@ -101,6 +101,9 @@ KNIFES_DIR   ?= content/docs/$(LOCALE)/knifes
 SDLC_DIR ?= content/docs/$(LOCALE)/sdlc
 Q12_DIR  ?= content/docs/$(LOCALE)/q12
 STHDF_DIR ?= content/docs/$(LOCALE)/sthdf
+DASH_DIR  ?= content/docs/$(LOCALE)/class_sthdf_dashboard
+# Akademický rok pre texty v dashboarde – default sa odvodí z DASH_NAME (napr. ...-2023-2024)
+YEAR      ?= $(shell echo "$(DASH_NAME)" | grep -oE "[0-9]{4}-[0-9]{4}")
 
 # Ako sa má generator správať, keď cieľový súbor/priečinok už existuje.
 # Povolené hodnoty (mapujú sa na --exists v new_item_instance.py):
@@ -133,6 +136,7 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 	@printf " \033[36m%-28s\033[0m | %s\n" "S21-sdlc-new" "SDLC inštancia (SDLC_NAME, SDLC_TITLE, LOCALE)"
 	@printf " \033[36m%-28s\033[0m | %s\n" "Q21-q12-new"  "Q12 inštancia (Q12_NAME, Q12_TITLE, LOCALE)"
 	@printf " \033[36m%-28s\033[0m | %s\n" "S31-sthdf-new" "STHDF inštancia (STHDF_NAME, STHDF_TITLE, LOCALE)"
+	@printf " \033[36m%-28s\033[0m | %s\n" "S41-dashboard-new" "Triedny dashboard ročníka (DASH_NAME, DASH_TITLE, STUDENTS, PROJECTS, LOCALE)"
 	@printf "\n"
 
 	@printf "\033[1;33m🚀 DEPLOY / WORKTREE\033[0m\n"
@@ -174,7 +178,7 @@ help: ## Zobrazí prehľad príkazov podľa sekcií + príklady
 	@printf "\033[1;90m🎓 STHDF (class instance)\033[0m\n"
 	@printf " \033[1m%-28s\033[0m | \033[1m%s\033[0m\n" "Target" "Description"
 	@printf "%-28s-+-%s\n" "----------------------------" "----------------------------------------------"
-	@awk 'BEGIN{FS=":.*## "};/^(S31-sthdf-new):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
+	@awk 'BEGIN{FS=":.*## "};/^(S31-sthdf-new|S41-dashboard-new):.*## /{printf " \033[1m%-28s\033[0m | %s\n",$$1,$$2}' $(MAKEFILE_LIST)
 	@printf "\n"
 
 	@printf "\033[1;90m🔢 Q12 (Twelve Quadrants)\033[0m\n"
@@ -632,6 +636,7 @@ help-examples:
 	@printf " %-40s | %s\n" "make Q21-q12-new Q12_NAME=mgmt Q12_TITLE='Q12 Management Layer' LOCALE=en" "Vytvorí novú Q12 inštanciu – EN"
 	@printf " %-40s | %s\n" "make S31-sthdf-new STHDF_NAME=sthdf_2025 STHDF_TITLE='STHDF 2025/2026' LOCALE=sk" "Vytvorí novú STHDF inštanciu – SK"
 	@printf " %-40s | %s\n" "make S31-sthdf-new STHDF_NAME=sthdf_2025 STHDF_TITLE='STHDF 2025/2026' LOCALE=en" "Vytvorí novú STHDF inštanciu – EN"
+	@printf " %-40s | %s\n" "make S41-dashboard-new DASH_NAME=01-class_sthdf_dashboard_2026-2027 DASH_TITLE='Class STHDF 2026-2027' STUDENTS=77 PROJECTS=40 LOCALE=sk [EXISTS=skip|replace|error]" "Vygeneruje triedny dashboard ročníka (sloty ST0XX/PRJ0YY)"
 	@printf "\n"
 	@printf " %-40s | %s\n" "make doctor" "Rýchla diagnostika prostredia"
 	@printf " %-40s | %s\n" "make print-vars" "Vypíše dôležité premenné"
@@ -696,6 +701,27 @@ S31-sthdf-new: ## STHDF: vytvor novú STHDF inštanciu (STHDF_NAME=..., STHDF_TI
 		--config config/sthdf/sthdf_config.yml \
 		--exists "$(EXISTS)"
 	@echo "✅ STHDF created: $(STHDF_DIR)/sthdf_$(STHDF_NAME)"
+
+# Triedny dashboard ročníka (typ class_sthdf_dashboard): sloty ST001..ST<STUDENTS>, PRJ001..PRJ<PROJECTS>
+S41-dashboard-new: ## class_sthdf_dashboard: vygeneruj dashboard ročníka (DASH_NAME=..., DASH_TITLE=..., STUDENTS=N, PROJECTS=M)
+	@if [ -z "$(DASH_NAME)" ] || [ -z "$(DASH_TITLE)" ] || [ -z "$(STUDENTS)" ] || [ -z "$(PROJECTS)" ]; then \
+		echo "❌ Usage: make S41-dashboard-new DASH_NAME=01-class_sthdf_dashboard_2026-2027 DASH_TITLE='Class STHDF 2026-2027' STUDENTS=77 PROJECTS=40 LOCALE=sk"; \
+		exit 1; \
+	fi
+	@mkdir -p "$(DASH_DIR)"
+	@python3 core/scripts/tools/new_item_instance.py \
+		--type class_sthdf_dashboard \
+		--id "$(DASH_NAME)" \
+		--name "$(DASH_NAME)" \
+		--title "$(DASH_TITLE)" \
+		--locale "$(LOCALE)" \
+		--config config/class_sthdf_dashboard/class_sthdf_dashboard_config.yml \
+		--students "$(STUDENTS)" \
+		--projects "$(PROJECTS)" \
+		--exists "$(EXISTS)"
+	@if [ -z "$(YEAR)" ]; then echo "❌ YEAR sa nedá odvodiť z DASH_NAME – zadaj YEAR=2026-2027"; exit 1; fi
+	@find "$(DASH_DIR)/$(DASH_NAME)" -name "*.md" -print0 | xargs -0 perl -pi -e 's/\@\@YEAR\@\@/$(subst -,–,$(YEAR))/g; s/\@\@YEAR_START\@\@/$(firstword $(subst -, ,$(YEAR)))/g'
+	@echo "✅ Dashboard created: $(DASH_DIR)/$(DASH_NAME)"
 # ─────────────────────────────────────────────────────────
 # ROADMAP / TODO – placeholdery (neblokujú CI)
 # ─────────────────────────────────────────────────────────
